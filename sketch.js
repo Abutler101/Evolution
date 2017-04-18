@@ -2,7 +2,7 @@ var vehicles = [];
 var food = [];
 var poison = [];
 var debug;
-
+//F$*k comments
 function setup() {
   createCanvas(640, 360);
   for (var i = 0; i < 50; i++) {
