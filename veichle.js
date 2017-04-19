@@ -10,16 +10,11 @@ function Vehicle(x, y, dna) {
   this.health = 1;
   this.dna = [];
   if (dna === undefined) {
-    // Food weight
     this.dna[0] = random(-2, 2);
-    // Poison weight
     this.dna[1] = random(-2, 2);
-    // Food perception
     this.dna[2] = random(0, 100);
-    // Poision Percepton
     this.dna[3] = random(0, 100);
   } else {
-    // Mutation
     this.dna[0] = dna[0];
     if (random(1) < mr) {
       this.dna[0] += random(-0.1, 0.1);
@@ -37,19 +32,14 @@ function Vehicle(x, y, dna) {
       this.dna[3] += random(-10, 10);
     }
   }
-  // Method to update location
   this.update = function() {
     this.health -= 0.005;
-    // Update velocity
     this.velocity.add(this.acceleration);
-    // Limit speed
     this.velocity.limit(this.maxspeed);
     this.position.add(this.velocity);
-    // Reset accelerationelertion to 0 each cycle
     this.acceleration.mult(0);
   }
   this.applyForce = function(force) {
-    // We could add mass here if we want A = F / M
     this.acceleration.add(force);
   }
   this.behaviors = function(good, bad) {
