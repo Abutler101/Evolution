@@ -28,7 +28,7 @@ function setup() {
 }
 function draw() {
   background(51);
-  if (random(1) < 0.10) { //10% probability to drop more food
+  if (random(1) < 0.20) { //20% probability to drop more food
     food.push(createVector(random(width), random(height)));
   }
   if (random(1) < 0.01) { //1% probability to drop more poison
