@@ -4,7 +4,7 @@ var poison = [];
 var debug;
 //F$*k comments
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(1000,775);
   for (var i = 0; i < 50; i++) {
     var x = random(width);
     var y = random(height);
