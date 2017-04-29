@@ -1,5 +1,5 @@
 // nex generation automation based on vehicles healthiest survivor + some fine tinuning to the genetic algorithm
-// press alt for switch debug on/off
+// press ctrl for switch debug on/off
 // mouse press for adding new vehicles
 
 var vehicles = [];
